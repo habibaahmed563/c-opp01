@@ -5,29 +5,21 @@
         static void Main(string[] args)
         {
 
-            zoo[] zoos = new zoo[3];
-
-            for (int i = 0;i < 3;i++)
-            {
-                Console.WriteLine("enter the name of zoo :", i + 1);
-                zoos[i].Name = Console.ReadLine();
-
-                Console.WriteLine("enter number of animals ", zoos[i].Name);
-                zoos[i].animalcount = int.Parse(Console.ReadLine());
-            }
+            //part 01 : 
+            //1. 
 
 
-            int maxIndex= 0;
-            for (int i =1;i<3;i++)
-            {
-                if (zoos[i].animalcount > zoos[maxIndex].animalcount)
-                    maxIndex = i;
-            }
+            Console.WriteLine("enter point 1 :");
+            double X1 = double.Parse(Console.ReadLine());
+            double Y1 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"the name of the zoo with the max animals {zoos[maxIndex].Name} ");
-            Console.WriteLine($"the animal count {zoos[maxIndex].animalcount}");
+            Console.WriteLine("enter point 2 : ");
+            double X2 = double.Parse(Console.ReadLine());
+            double Y2 = double.Parse(Console.ReadLine());
 
-
+            Point P1 = new Point(X1, Y1);
+            Point P2 = new Point(X2, Y2);
+            double distance = P1.distance(P2);
 
         }
     }
