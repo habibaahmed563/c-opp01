@@ -24,5 +24,6 @@ namespace c_opp01
             return Math.Sqrt(dx * dx + dy * dy);
         }
 
+
     }
 }
