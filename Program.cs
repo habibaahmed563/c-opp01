@@ -57,7 +57,11 @@
 
             Console.WriteLine($"the oldest person is : {oldest.Name} whos's age is : {oldest.Age}");
 
+            /*=================================================================*/
 
+            //part 02: 
+
+            Employee[] Emparr = new Employee[3];
 
         }
     }
